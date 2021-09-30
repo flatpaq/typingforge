@@ -1,125 +1,126 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="format-detection" content="telephone=no">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
 
-	<!-- Page Title -->
-	<title>Typingforge</title>
+  <!-- Page Title -->
+  <title>Typingforge</title>
 
-	<!-- Loading CSS -->
-	<link rel="stylesheet" href="style.css">
+  <!-- Loading CSS -->
+  <link rel="stylesheet" href="style.css">
 
-	<!-- Loading Javascript -->
-	<script src="main.js" defer></script>
+  <!-- Loading Javascript -->
+  <script src="main.js" defer></script>
 
-	<!-- Loading Audio -->
-	<audio src="sound/incorrect.mp3" id="incorrect-sound" preload="none"></audio>
+  <!-- Loading Audio -->
+  <audio src="sound/incorrect.mp3" id="incorrect-sound" preload="none"></audio>
 
 </head>
 <body>
 
 <noscript><!-- If Users Javascript Off -->
-	<h1 id="no_script">Please enable javascript in your browser.</h1>
+  <h1 id="no_script">Please enable javascript in your browser.</h1>
 </noscript>
 
 <div id="loading-wrapper">
-	<div class="svg-wrapper container">
-		<div class="row-nocol just-center align-middle">
+  <div class="svg-wrapper container">
+    <div class="row-nocol just-center align-middle">
 
-			<svg id="svg-animation" class="svg" width="100%" height="100%" viewBox="0 0 2042 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+      <svg id="svg-animation" class="svg" width="100%" height="100%" viewBox="0 0 2042 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
 
-				<image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/typingforge-loading.svg" width="100%" height="100%" mask="url(#clipmask)">
-				</image>
-				
-				<mask id="clipmask" maskUnits="objectBoundingBox">
-					<path class="st"  d="M451.483,76.872l163.8,-0" />
-					<path class="st"  d="M533.383,76.872l-0,201.154" />
-					<path class="st"  d="M598.301,148.568l60.692,137.54" />
-					<path class="st"  d="M701.163,128.758c-0,0 -67.231,241.795 -115.002,211.133" />
-					<path class="st"  d="M753.778,213.937c0,-0 9.602,-72.045 68.198,-70.848c58.596,1.196 61.455,70.602 61.455,68.778c0,-1.825 -10.103,82.426 -60.542,66.159c-50.44,-16.268 -69.111,-64.089 -69.111,-64.089Z" />
-					<path class="st"  d="M753.778,137.626l0,226.8" />
-					<path class="st"  d="M941.236,69.226l0,7.646" />
-					<path class="st"  d="M941.236,137.626l0,140.4" />
-					<path class="st"  d="M1007.29,137.626l-0.038,140.4" />
-					<path class="st"  d="M1007.29,282.05c0,-0 -6.213,-140.419 63.279,-138.977c69.492,1.443 39.845,134.953 39.845,134.953" />
-					<path class="st"  d="M1295.8,207.826c0,-0 -13.77,-65.927 -63.326,-64.753c-49.557,1.174 -62.697,62.953 -62.697,62.953c-0,-0 3.993,70.689 59.902,63.292c55.908,-7.397 66.121,-61.492 66.121,-61.492Z" />
-					<path class="st"  d="M1284.2,128.758c0,0 32.738,333.84 -116.774,186.862" />
-					<path class="st"  d="M1841.64,202.271c0,0 -14.117,-54.858 -63.673,-53.684c-49.557,1.174 -55.324,53.209 -55.324,53.209c-0,-0 -3.033,69.364 52.875,61.967c55.909,-7.396 66.122,-61.492 66.122,-61.492Z" />
-					<path class="st"  d="M1841.64,132.071c0,0 21.138,324.973 -128.374,177.995" />
-					<path class="st"  d="M1423.54,58.43c-0,-0 -49.46,-17.748 -51.79,33.78c-2.33,51.528 0,185.816 0,185.816" />
-					<path class="st"  d="M1349.99,146.284l47.143,0" />
-					<path class="st"  d="M1507.52,143.073c-0,0 -63.046,-2.581 -66.241,69.483c-3.196,72.064 42.972,54.873 64.728,59.827c21.756,4.954 67.052,-32.121 63.856,-59.827c-3.195,-27.706 -28.277,-75.961 -62.343,-69.483Z" />
-					<path class="st"  d="M1626.84,137.626l1.46,140.4" />
-					<path class="st"  d="M1653.24,177.449c0,-0 -21.05,-54.434 36.769,-42.513" />
-					<path class="st"  d="M2008.57,262.863c0,0 -46.509,26.628 -79.528,17.249c-22.194,-6.304 -36.528,-34.879 -33.174,-76.201c8.345,-102.797 136.22,-79.569 119.473,-3.006l-72.263,2.417" />
-					<path class="st"  d="M141.668,25c-0,0 218.82,84.975 232.126,174.067l-69.917,65.249l-198.932,-201.863l36.723,-37.453Z" />
-					<path class="st"  d="M25,295.797l178.419,-174.532l42.471,42.03l-176.095,179.284l-44.795,-46.782Z" />	
-				</mask>
-			</svg>
+        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/typingforge-loading.svg" width="100%" height="100%" mask="url(#clipmask)">
+        </image>
+        
+        <mask id="clipmask" maskUnits="objectBoundingBox">
+          <path class="st"  d="M451.483,76.872l163.8,-0" />
+          <path class="st"  d="M533.383,76.872l-0,201.154" />
+          <path class="st"  d="M598.301,148.568l60.692,137.54" />
+          <path class="st"  d="M701.163,128.758c-0,0 -67.231,241.795 -115.002,211.133" />
+          <path class="st"  d="M753.778,213.937c0,-0 9.602,-72.045 68.198,-70.848c58.596,1.196 61.455,70.602 61.455,68.778c0,-1.825 -10.103,82.426 -60.542,66.159c-50.44,-16.268 -69.111,-64.089 -69.111,-64.089Z" />
+          <path class="st"  d="M753.778,137.626l0,226.8" />
+          <path class="st"  d="M941.236,69.226l0,7.646" />
+          <path class="st"  d="M941.236,137.626l0,140.4" />
+          <path class="st"  d="M1007.29,137.626l-0.038,140.4" />
+          <path class="st"  d="M1007.29,282.05c0,-0 -6.213,-140.419 63.279,-138.977c69.492,1.443 39.845,134.953 39.845,134.953" />
+          <path class="st"  d="M1295.8,207.826c0,-0 -13.77,-65.927 -63.326,-64.753c-49.557,1.174 -62.697,62.953 -62.697,62.953c-0,-0 3.993,70.689 59.902,63.292c55.908,-7.397 66.121,-61.492 66.121,-61.492Z" />
+          <path class="st"  d="M1284.2,128.758c0,0 32.738,333.84 -116.774,186.862" />
+          <path class="st"  d="M1841.64,202.271c0,0 -14.117,-54.858 -63.673,-53.684c-49.557,1.174 -55.324,53.209 -55.324,53.209c-0,-0 -3.033,69.364 52.875,61.967c55.909,-7.396 66.122,-61.492 66.122,-61.492Z" />
+          <path class="st"  d="M1841.64,132.071c0,0 21.138,324.973 -128.374,177.995" />
+          <path class="st"  d="M1423.54,58.43c-0,-0 -49.46,-17.748 -51.79,33.78c-2.33,51.528 0,185.816 0,185.816" />
+          <path class="st"  d="M1349.99,146.284l47.143,0" />
+          <path class="st"  d="M1507.52,143.073c-0,0 -63.046,-2.581 -66.241,69.483c-3.196,72.064 42.972,54.873 64.728,59.827c21.756,4.954 67.052,-32.121 63.856,-59.827c-3.195,-27.706 -28.277,-75.961 -62.343,-69.483Z" />
+          <path class="st"  d="M1626.84,137.626l1.46,140.4" />
+          <path class="st"  d="M1653.24,177.449c0,-0 -21.05,-54.434 36.769,-42.513" />
+          <path class="st"  d="M2008.57,262.863c0,0 -46.509,26.628 -79.528,17.249c-22.194,-6.304 -36.528,-34.879 -33.174,-76.201c8.345,-102.797 136.22,-79.569 119.473,-3.006l-72.263,2.417" />
+          <path class="st"  d="M141.668,25c-0,0 218.82,84.975 232.126,174.067l-69.917,65.249l-198.932,-201.863l36.723,-37.453Z" />
+          <path class="st"  d="M25,295.797l178.419,-174.532l42.471,42.03l-176.095,179.284l-44.795,-46.782Z" />	
+        </mask>
+      </svg>
 
-		</div><!-- row end -->
-	</div><!-- container end -->
+    </div><!-- row end -->
+  </div><!-- container end -->
 </div><!-- loading-wrapper end -->
 
 <div class="wrapper">
 
-	<header>
-		<div class="container-fluid">
-			<div class="row-nocol align-middle">
+  <header>
+    <div class="container-fluid">
+      <div class="row-nocol align-middle">
 
-					<!-- product title -->
-					<h1>
-						<div class="row-nocol just-start">
-							<img src="img/logo.svg" class="display light logo header-icons" alt=""><img src="img/typingforge.svg" class="display light typography" alt="Typingforge">
-							<img src="img/logo-dark.svg" class="dark logo header-icons" alt=""><img src="img/typingforge-dark.svg" class="dark typography" alt="Typingforge">
-						</div>
-					</h1>
-			
-					<div class="function-area">
-						<div class="row-nocol just-end">
-							<!-- input -->
-							<label class="upload header-icons">
-							<input type="file" name="file" id="uploaded-file">
-							</label>
+          <!-- product title -->
+          <h1>
+            <div class="row-nocol just-start">
+              <img src="img/logo.svg" class="display light logo header-icons" alt=""><img src="img/typingforge.svg" class="display light typography" alt="Typingforge">
+              <img src="img/logo-dark.svg" class="dark logo header-icons" alt=""><img src="img/typingforge-dark.svg" class="dark typography" alt="Typingforge">
+            </div>
+          </h1>
+      
+          <div class="function-area">
+            <div class="row-nocol just-end">
+              <!-- input -->
+              <label class="upload header-icons">
+              <input type="file" name="file" id="uploaded-file">
+              </label>
 
-							<!-- repeat -->
-							<button id="repeat">
-								<img src="img/repeat.svg" class="display light header-icons" alt="">
-								<img src="img/repeat-dark.svg" class="dark header-icons" alt="">
-							</button>
+              <!-- repeat -->
+              <button id="repeat">
+                <img src="img/repeat.svg" class="display light header-icons" alt="">
+                <img src="img/repeat-dark.svg" class="dark header-icons" alt="">
+              </button>
 
-							<button id="dark-theme-button">
-								<img src="img/moon.svg" class="display light header-icons" alt="">
-								<img src="img/sun-dark.svg" class="dark header-icons" alt="">
-							</button>
+              <button id="dark-theme-button">
+                <img src="img/moon.svg" class="display light header-icons" alt="">
+                <img src="img/sun-dark.svg" class="dark header-icons" alt="">
+              </button>
 
-						</div>
-					</div><!-- function area end -->
+            </div>
+          </div><!-- function area end -->
 
-			</div><!-- row end -->
-		</div><!-- container end -->
-	</header><!-- header end -->
+      </div><!-- row end -->
+    </div><!-- container end -->
+  </header><!-- header end -->
 
 
-	<div class="typing-wrapper container">
+  <div class="typing-wrapper container">
 
-		<div class="notice-wrapper upload row-nocol just-center align-middle">
-			<section class="notice-to-upload">
-				Multibyte characters are converted to blank when uploading the file.
-				<br>
-				マルチバイト文字はファイルアップロード時に空文字に変換されます。
-			</section>
-		</div>
+    <div class="notice-wrapper upload row-nocol just-center align-middle">
+      <section class="notice-to-upload">
+        <!-- Multibyte characters are converted to blank when uploading the file. -->
+        Multi-byte characters will be converted to empty characters when the file is uploaded.
+        <br>
+        マルチバイト文字はファイルアップロード時に空文字に変換されます。
+      </section>
+    </div>
 
-		<main class="typing">	
-			<div id="output" contenteditable="true" spellcheck="false" draggable="false"></div>	
-		</main><!-- typing end -->
-	</div><!-- typing-wrapper end -->
-	
+    <main class="typing">	
+      <div id="output" contenteditable="true" spellcheck="false" draggable="false"></div>	
+    </main><!-- typing end -->
+  </div><!-- typing-wrapper end -->
+  
 </div><!-- wrapper end -->
-	
+  
 </body>
 </html>
