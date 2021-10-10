@@ -172,6 +172,7 @@ img.typography {
   right: 0;
   transition: opacity 0.2s ease-out;
   opacity: 1;
+  backdrop-filter: blur(2px);
 }
 
 .end-modal > .notice-to-end, .dark .end-modal > .notice-to-end {
