@@ -68,6 +68,8 @@ uploadedFile.addEventListener('input', function(e) {
   let file = files[0];
 
 	let reader = new FileReader();
+
+  // ファイルがロードされたら
 	reader.addEventListener('load', function() {
 
       // ファイル内のテキストを変数に格納
@@ -82,15 +84,16 @@ uploadedFile.addEventListener('input', function(e) {
       // アップロードしたファイルの中身を削除する
       uploadedFile.value = '';
       
-      // Assign Value of each Variables
+      // 各変数に初期値をセットする
       typeText = output.textContent;
       textLength = typeText.length - 1;
       currentTypeNumber = 0;
       currentChar = typeText.charAt(currentTypeNumber);   
 
-      // Set a Cursor for current char
+      // タイピングカーソルを一文字目に設定する
       output.innerHTML = `<span class="text-cursor">${escapeHtml(typeText.slice(0, currentTypeNumber + 1))}</span>${escapeHtml(typeText.slice(currentTypeNumber + 1, typeText.length))}`;
 
+      // 不正解時の音をロード
       incorrectSound.load();
 	});
   reader.readAsText(file);
@@ -132,7 +135,6 @@ function typeStart() {
       if(currentTypeNumber === 1) {
         // タイム計測開始
         oldTime = performance.now();
-        console.log(oldTime);
       }
 
       // 最後の文字をタイプした時
@@ -140,7 +142,6 @@ function typeStart() {
   
         // 終了時のタイム計測
         currentTime = performance.now();
-        console.log(currentTime);
         displayModalWindow();  
       }
 
